@@ -1,0 +1,85 @@
+/* POPUP */
+.container.form-success .loading {
+	opacity: 1;
+  -webkit-transform: translateY(90px);
+      -ms-transform: translateY(90px);
+          transform: translateY(90px);
+
+   -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+
+/*
+  Loader class
+*/
+.container .loading{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 70px;
+	text-align: center;
+	opacity: 0;
+}
+
+.container .logo {
+	position: relative;
+  width: 250px;
+
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+}
+
+.container .spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: auto;
+
+    -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
