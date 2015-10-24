@@ -13,7 +13,7 @@
 
 function waitFiveSeconds(){
 //window.location.href = "lobby.html";
-window.location.href = "company.html";
+window.location.href = "html/company.html";
 
 
 } 
